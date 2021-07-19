@@ -25,34 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout activity_main;
     private FloatingActionButton sendBtn,menuBtn;
 
-    //-------------------------------
-    //GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getActivity());
-    //if (acct != null) {
-    //  String personName = acct.getDisplayName();
-    //  String personGivenName = acct.getGivenName();
-    //  String personFamilyName = acct.getFamilyName();
-    //  String personEmail = acct.getEmail();
-    //  String personId = acct.getId();
-    //  Uri personPhoto = acct.getPhotoUrl();
-    //}
-    //-------------------------------
-    //private void updateUI(FirebaseUser user) {
-        //hideProgressDialog();
-        //if (user != null) {
-           // EditText textField = findViewById(R.id.log_name);
-           // textField.setText(getString(R.string.name_hint, user.getDisplayName()));
-            //mDetailTextView.setText(getString(R.string.U, user.getUid()));
-
-            //findViewById(R.id.go).setVisibility(View.GONE);
-            //findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
-        //} //else {
-            //mStatusTextView.setText(R.string.signed_out);
-            //mDetailTextView.setText(null);
-
-            //findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-           // findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
-        //}
-    //}
     //-----------------------------------------------------------------------------------------------------
     //1. Вид сообщения
     public FirebaseListAdapter <Message> adapter = new FirebaseListAdapter<Message>(this, Message.class,R.layout.item,
@@ -116,29 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 check();
             }
         });
-//метод проверки имени при регистрации на уникальность (мб поменять мэйнактивити)
-     /*   Button btm=findViewById(R.id.btnSend);
-        btm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final EditText txt = findViewById(R.id.log_name);
-                users.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot childDataSnapshot : dataSnapshot.getChildren()) {
-                            if(txt.getText().toString().equals(childDataSnapshot))
-                                Toast.makeText(MainActivity.this,"Такой пользователь есть",Toast.LENGTH_SHORT).show();
-                            else Toast.makeText(MainActivity.this,"Вход/Регистрация успешна",Toast.LENGTH_SHORT).show();
 
-                        }
-                    }
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });*/
     }
     //-----------------------------------------------------------------------------------------------------
     @Override
@@ -179,11 +129,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//Toast.makeText(MainActivity.this,"Success: "+ finalTextView.getText().toString(),Toast.LENGTH_SHORT);
-//        if(value[0].equals(textField.getText().toString()))
-//            Snackbar.make(activity_main, "Этот Пользователь найден!", Snackbar.LENGTH_SHORT).show();
-//        else
-//            Snackbar.make(activity_main, "Этот PPPользователь ne найден!", Snackbar.LENGTH_SHORT).show();
+
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser users = mAuth.getCurrentUser();
         if (!textField.getText().toString().equals(users.getDisplayName()))
