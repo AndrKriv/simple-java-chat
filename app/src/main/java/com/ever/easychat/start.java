@@ -23,10 +23,7 @@ public class start extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        //if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-        //   Intent s = new Intent(getApplicationContext(), MainActivity.class);
-        //   startActivity(s);
-        //} else
+
         database = FirebaseDatabase.getInstance();
         users = database.getReference("/users");
         name = findViewById(R.id.log_name);
@@ -45,60 +42,13 @@ public class start extends AppCompatActivity {
         go_to.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //signIn(name.getText().toString(), pass.getText().toString());
+          
                 Intent h = new Intent(getApplicationContext(), first.class);
                 startActivity(h);
 
             }
         });
         //---
-        //код регистрации и проверок
-        //---
-        /*go_to.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                users.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });*/
-        //---
-        //Конец проверок и регистрации
-        //---
-
-
-    /*private void signIn(final String username, final String password) {
-        users.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if(dataSnapshot.child(username).exists()){
-                    if(!username.isEmpty()){
-                        Intent s=new Intent(getApplicationContext(),first.class);
-                        startActivity(s);
-                       // User login = dataSnapshot.child(username).getValue(User.class);
-                        //if(login.getPassword.equals(password)){
-                          //  Toast.makeText(start.this,"Success",Toast.LENGTH_SHORT).show();
-                        //}
-                        //else Toast.makeText(start.this,"Ne success  pass",Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                        Toast.makeText(start.this,"Ne success  name",Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }*/
+       
     }
 }
