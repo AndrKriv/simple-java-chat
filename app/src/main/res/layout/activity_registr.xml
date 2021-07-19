@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ever.easychat.Registr"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="Registration"
+        android:paddingVertical="35dp"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/white"
+        android:background="@drawable/fon"
+        android:layout_marginBottom="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/reg_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your mail"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your name"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your pass"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/registr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/reg_butt"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:id="@+id/back_to_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        />
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "41305783857",
+    "firebase_url": "https://everchat-2aa71.firebaseio.com",
+    "project_id": "everchat-2aa71",
+    "storage_bucket": "everchat-2aa71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41305783857:android:3080d232b256c11143df10",
+        "android_client_info": {
+          "package_name": "com.ever.easychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41305783857-m9sio493strfv5q8tigpf11jqllsl3i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ever.easychat",
+            "certificate_hash": "cba56408f54bfce96b5192d3f7631b56b5f031d5"
+          }
+        },
+        {
+          "client_id": "41305783857-b43kto3cfdujkt3cg42qpv525v3t7dni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFOrfY1759T4CeII2p_KzHGyy-9I9f8r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41305783857-b43kto3cfdujkt3cg42qpv525v3t7dni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

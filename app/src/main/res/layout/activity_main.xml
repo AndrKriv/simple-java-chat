@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context="com.ever.easychat.MainActivity"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/send_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6sp"
+        app:fabSize="mini"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/menu_btn"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6sp"
+        app:fabSize="mini"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btnSend"
+        android:layout_toRightOf="@id/menu">
+
+    <EditText
+            android:id="@+id/messageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите сообщение..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+</RelativeLayout>

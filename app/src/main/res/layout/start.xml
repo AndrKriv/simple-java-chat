@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/first_glass"
+    tools:context="com.ever.easychat.MainActivity"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_music"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6sp"
+        app:fabSize="normal"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_message"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6sp"
+        app:fabSize="normal"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/forum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_find"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6sp"
+        app:fabSize="normal"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/chat"
+        android:layout_toRightOf="@id/music">
+
+        <EditText
+            android:id="@+id/manField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Кому написать?" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

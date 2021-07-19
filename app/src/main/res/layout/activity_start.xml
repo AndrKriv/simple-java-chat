@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ever.easychat.start">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="Login"
+        android:paddingVertical="35dp"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/white"
+        android:background="@drawable/fon"
+        android:layout_marginBottom="25dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/log_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:layout_marginHorizontal="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нет аккаунта? Создайте сейчас!"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/reg_butt"
+        android:textColor="@android:color/white"
+        />
+
+
+</LinearLayout>
