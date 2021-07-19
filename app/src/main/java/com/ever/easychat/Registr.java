@@ -97,25 +97,5 @@ public class Registr extends AppCompatActivity {
         //---
 
     }
-   /* public void check() {
-        EditText textField = findViewById(R.id.messageField);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("/");
-        myRef.orderByChild("userName").equalTo(textField.getText().toString()).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-             int i=(int)dataSnapshot.getChildrenCount();
-                for (DataSnapshot childDataSnapshot : dataSnapshot.getChildren()) {
-
-                    Snackbar.make(activity_main, "Этот Пользователь найден!", Snackbar.LENGTH_SHORT).show();
-                    //updateUI(user);
-                }
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Snackbar.make(activity_main, databaseError.getMessage(), Snackbar.LENGTH_SHORT).show();
-            }
-        });
-    }*/
 }
